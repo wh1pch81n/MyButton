@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7FBDA91E1AC71FCE005C5151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDA91D1AC71FCE005C5151 /* AppDelegate.swift */; };
 		7FBDA9201AC71FCE005C5151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDA91F1AC71FCE005C5151 /* ViewController.swift */; };
-		7FBDA9231AC71FCE005C5151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBDA9211AC71FCE005C5151 /* Main.storyboard */; };
 		7FBDA9251AC71FCE005C5151 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBDA9241AC71FCE005C5151 /* Images.xcassets */; };
 		7FBDA9281AC71FCF005C5151 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBDA9261AC71FCF005C5151 /* LaunchScreen.xib */; };
 		7FBDA9341AC71FCF005C5151 /* MyButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDA9331AC71FCF005C5151 /* MyButtonTests.swift */; };
@@ -30,7 +29,6 @@
 		7FBDA91C1AC71FCE005C5151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBDA91D1AC71FCE005C5151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FBDA91F1AC71FCE005C5151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7FBDA9221AC71FCE005C5151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FBDA9241AC71FCE005C5151 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7FBDA9271AC71FCF005C5151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7FBDA92D1AC71FCF005C5151 /* MyButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 			children = (
 				7FBDA91D1AC71FCE005C5151 /* AppDelegate.swift */,
 				7FBDA91F1AC71FCE005C5151 /* ViewController.swift */,
-				7FBDA9211AC71FCE005C5151 /* Main.storyboard */,
 				7FBDA9241AC71FCE005C5151 /* Images.xcassets */,
 				7FBDA9261AC71FCF005C5151 /* LaunchScreen.xib */,
 				7FBDA91B1AC71FCE005C5151 /* Supporting Files */,
@@ -192,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FBDA9231AC71FCE005C5151 /* Main.storyboard in Resources */,
 				7FBDA9281AC71FCF005C5151 /* LaunchScreen.xib in Resources */,
 				7FBDA9251AC71FCE005C5151 /* Images.xcassets in Resources */,
 			);
@@ -236,14 +232,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7FBDA9211AC71FCE005C5151 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FBDA9221AC71FCE005C5151 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7FBDA9261AC71FCF005C5151 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -407,6 +395,7 @@
 				7FBDA9391AC71FCF005C5151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FBDA93A1AC71FCF005C5151 /* Build configuration list for PBXNativeTarget "MyButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +404,7 @@
 				7FBDA93C1AC71FCF005C5151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
