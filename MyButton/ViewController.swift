@@ -10,6 +10,7 @@ import UIKit
 
 class MainView : UIView {
     var coolButton:(UIButton)!
+    var hotButton:(CustomButton)!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,12 +41,16 @@ class MainView : UIView {
         self.coolButton.center = self.center
         self.addSubview(self.coolButton)
         self.coolButton.backgroundColor = UIColor.blueColor()
+        
+        self.hotButton = CustomButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        self.addSubview(hotButton)
     }
 }
 
 class ViewController: UIViewController {
     var mainView:(MainView)!
     var coolerButton:(UIButton)!
+    var hotterButton:(CustomButton)!
     
     override func loadView() {
         super.loadView()
@@ -56,6 +61,21 @@ class ViewController: UIViewController {
             action: "tappedCoolButton:",
             forControlEvents: UIControlEvents.TouchUpInside)
         
+        self.hotterButton = self.mainView.hotButton
+        self.hotterButton.completionBlock = {
+            () -> () in
+            var alert = UIAlertController(title: "Yang", message: "Sour", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            var action = UIAlertAction(title: "yup!", style: UIAlertActionStyle.Cancel) {
+                (actionInstance: UIAlertAction!) -> Void in
+                self.mainView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+            }
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true) {
+                () -> Void in
+                self.mainView.backgroundColor = UIColor.yellowColor()
+            }
+        }
     }
     
     func tappedCoolButton(sender: AnyObject) {

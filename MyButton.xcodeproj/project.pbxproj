@@ -12,6 +12,7 @@
 		7FBDA9251AC71FCE005C5151 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBDA9241AC71FCE005C5151 /* Images.xcassets */; };
 		7FBDA9281AC71FCF005C5151 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBDA9261AC71FCF005C5151 /* LaunchScreen.xib */; };
 		7FBDA9341AC71FCF005C5151 /* MyButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDA9331AC71FCF005C5151 /* MyButtonTests.swift */; };
+		7FBDA93E1AC735CD005C5151 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDA93D1AC735CD005C5151 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		7FBDA92D1AC71FCF005C5151 /* MyButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBDA9321AC71FCF005C5151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBDA9331AC71FCF005C5151 /* MyButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtonTests.swift; sourceTree = "<group>"; };
+		7FBDA93D1AC735CD005C5151 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				7FBDA91D1AC71FCE005C5151 /* AppDelegate.swift */,
 				7FBDA91F1AC71FCE005C5151 /* ViewController.swift */,
+				7FBDA93D1AC735CD005C5151 /* CustomButton.swift */,
 				7FBDA9241AC71FCE005C5151 /* Images.xcassets */,
 				7FBDA9261AC71FCF005C5151 /* LaunchScreen.xib */,
 				7FBDA91B1AC71FCE005C5151 /* Supporting Files */,
@@ -210,6 +213,7 @@
 			files = (
 				7FBDA9201AC71FCE005C5151 /* ViewController.swift in Sources */,
 				7FBDA91E1AC71FCE005C5151 /* AppDelegate.swift in Sources */,
+				7FBDA93E1AC735CD005C5151 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
