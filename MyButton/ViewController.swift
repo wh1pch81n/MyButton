@@ -44,16 +44,39 @@ class MainView : UIView {
 }
 
 class ViewController: UIViewController {
+    var mainView:(MainView)!
+    var coolerButton:(UIButton)!
     
     override func loadView() {
         super.loadView()
         self.view = MainView(frame: UIScreen.mainScreen().bounds)
+        self.mainView = self.view as MainView
+        self.coolerButton = self.mainView.coolButton
+        self.coolerButton.addTarget(self,
+            action: "tappedCoolButton:",
+            forControlEvents: UIControlEvents.TouchUpInside)
         
+    }
+    
+    func tappedCoolButton(sender: AnyObject) {
+        var alert = UIAlertController(title: "Bang", message: "Power", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        var action = UIAlertAction(title: "OK!", style: UIAlertActionStyle.Destructive) {
+            (actionInstance: UIAlertAction!) -> Void in
+            self.mainView.backgroundColor = UIColor.greenColor()
+        }
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true) {
+            () -> Void in
+            self.mainView.backgroundColor = UIColor.blueColor()
+        }
+        
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
